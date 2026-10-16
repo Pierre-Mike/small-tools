@@ -19,6 +19,6 @@
     "prepare": "axioms hooks"
   },
   "devDependencies": {
-    "@pierre-mike/axioms": "github:Pierre-Mike/factory#v0.13.0"
+    "@pierre-mike/axioms": "github:Pierre-Mike/factory#v0.14.0"
   }
 }
