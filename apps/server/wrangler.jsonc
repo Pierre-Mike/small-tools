@@ -14,8 +14,7 @@
     {
       "binding": "DB",
       "database_name": "small-tools",
-      // Replace with the id printed by `wrangler d1 create small-tools` before the first deploy.
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "5424c62f-bab9-49d4-8c82-7b8152103115",
       "migrations_dir": "migrations"
     }
   ],
