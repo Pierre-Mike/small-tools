@@ -1,0 +1,24 @@
+{
+  "name": "small-tools",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.6",
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "axioms dev",
+    "check": "axioms check",
+    "smoke": "axioms smoke",
+    "slice": "axioms slice",
+    "lint": "axioms biome check --write .",
+    "deploy": "axioms deploy",
+    "deploy:dry": "axioms deploy --dry-run",
+    "ci:dry": "axioms ci-dry-run --all",
+    "prepare": "axioms hooks"
+  },
+  "devDependencies": {
+    "@pierre-mike/axioms": "git+ssh://git@github.com/Pierre-Mike/factory.git#v0.11.0"
+  }
+}

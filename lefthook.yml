@@ -1,0 +1,3 @@
+# Hooks come from the harness. Run `bunx axioms sync` after upgrading it.
+extends:
+  - node_modules/@pierre-mike/axioms/harness/lefthook.yml
