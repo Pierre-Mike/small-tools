@@ -6,6 +6,7 @@
 import { Hono } from "hono"
 import { logger } from "hono/logger"
 import { requestId } from "hono/request-id"
+import { buildConvertApp } from "./features/convert/convert.routes"
 import { buildHealthApp } from "./features/health/health.routes"
 import { onNotFound, onUnexpectedError } from "./platform/http"
 import type { AppRuntime } from "./platform/runtime"
@@ -18,5 +19,6 @@ export const buildApp = (runtime: AppRuntime) =>
     .use("*", requestId())
     .use("*", logger(console.log))
     .route("/health", buildHealthApp(runtime))
+    .route("/convert", buildConvertApp(runtime))
 
 export type AppType = ReturnType<typeof buildApp>
