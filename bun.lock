@@ -5,7 +5,7 @@
     "": {
       "name": "small-tools",
       "devDependencies": {
-        "@pierre-mike/axioms": "git+ssh://git@github.com/Pierre-Mike/factory.git#v0.11.0",
+        "@pierre-mike/axioms": "github:Pierre-Mike/factory#v0.13.0",
       },
     },
     "apps/server": {
@@ -267,7 +267,7 @@
 
     "@napi-rs/lzma-linux-x64-gnu": ["@napi-rs/lzma-linux-x64-gnu@1.5.1", "", { "os": "linux", "cpu": "x64" }, "sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ=="],
 
-    "@pierre-mike/axioms": ["@pierre-mike/axioms@git+ssh://git@github.com/Pierre-Mike/factory.git#5e00ccd6b51cfdb429f02b8c37d581ed28b48ed8", { "dependencies": { "@biomejs/biome": "2.4.16", "fallow": "2.90.0", "lefthook": "2.1.9", "typescript": "5.9.3" }, "bin": { "axioms": "./cli/main.ts" } }, "5e00ccd6b51cfdb429f02b8c37d581ed28b48ed8"],
+    "@pierre-mike/axioms": ["@pierre-mike/axioms@github:Pierre-Mike/factory#df81f45", { "dependencies": { "@biomejs/biome": "2.4.16", "fallow": "2.90.0", "lefthook": "2.1.9", "typescript": "5.9.3" }, "bin": { "axioms": "./cli/main.ts" } }, "Pierre-Mike-factory-df81f45"],
 
     "@poppinss/colors": ["@poppinss/colors@4.1.6", "", { "dependencies": { "kleur": "^4.1.5" } }, "sha512-H9xkIdFswbS8n1d6vmRd8+c10t2Qe+rZITbbDHHkQixH5+2x1FDGmi/0K+WgWiqQFKPSlIYB7jlH6Kpfn6Fleg=="],
 
