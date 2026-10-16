@@ -3,10 +3,11 @@
  * `ensureQueryData` without importing a singleton.
  */
 import { createRouter } from "@tanstack/react-router"
+import { convertRoute } from "./features/convert/convert.route"
 import { healthRoute } from "./features/health/health.route"
 import { type RouterContext, rootRoute } from "./root-route"
 
-const routeTree = rootRoute.addChildren([healthRoute])
+const routeTree = rootRoute.addChildren([healthRoute, convertRoute])
 
 export const createAppRouter = (context: RouterContext) =>
   createRouter({ routeTree, context, defaultPreload: "intent" })

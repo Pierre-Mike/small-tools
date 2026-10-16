@@ -19,7 +19,10 @@ export type RouteRuntime<R> = Pick<ManagedRuntime.ManagedRuntime<R, never>, "run
 const INTERNAL_SERVER_ERROR = { _tag: "InternalServerError" } as const
 
 const STATUS_BY_TAG: Record<string, ContentfulStatusCode> = {
+  IncompatibleUnits: 400,
+  InvalidValue: 400,
   InvalidVerboseFlag: 400,
+  UnknownUnit: 400,
 }
 
 export const errorEnvelope = (error: TaggedError) => {
